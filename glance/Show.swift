@@ -13,7 +13,7 @@ struct Show {
     let status: String
     let summary: String
     let imageUrl: String
-    let rating: Double
+    let rating: Double?
 }
 
 extension Show: Decodable {
@@ -48,7 +48,7 @@ extension Show: Decodable {
         imageUrl = try imageContainer.decode(String.self, forKey: .medium)
         
         let ratingContainer = try showContainer.nestedContainer(keyedBy: RatingKeys.self, forKey: .rating)
-        rating = try ratingContainer.decodeIfPresent(Double.self, forKey: .average) ?? -69
+        rating = try ratingContainer.decodeIfPresent(Double.self, forKey: .average)
         
         
     }

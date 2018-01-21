@@ -24,7 +24,7 @@ class Network {
                 if let shows = shows {
                     completion(shows)
                 } else {
-                    print("trip: \(data.description)")
+                    print("trip: \(response)")
                 }
             }
         }

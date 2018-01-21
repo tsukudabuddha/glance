@@ -43,7 +43,7 @@
                                                         <constraint firstAttribute="width" constant="100" id="KPC-aB-Wt0"/>
                                                     </constraints>
                                                 </imageView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" keyboardDismissMode="onDrag" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxh-9Y-GyH">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" keyboardDismissMode="onDrag" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxh-9Y-GyH">
                                                     <rect key="frame" x="120" y="39" width="245" height="130"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -51,7 +51,7 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAi-cZ-4QN">
-                                                    <rect key="frame" x="124" y="10" width="48" height="24"/>
+                                                    <rect key="frame" x="124" y="10" width="237" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -60,7 +60,7 @@
                                             <constraints>
                                                 <constraint firstItem="Lxh-9Y-GyH" firstAttribute="leading" secondItem="jTI-oc-5qq" secondAttribute="trailing" constant="10" id="ABV-Il-0IU"/>
                                                 <constraint firstItem="Lxh-9Y-GyH" firstAttribute="top" secondItem="XAi-cZ-4QN" secondAttribute="bottom" constant="5" id="H1I-zl-ixj"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XAi-cZ-4QN" secondAttribute="trailing" constant="103" id="QBr-7Y-N7h"/>
+                                                <constraint firstAttribute="trailing" secondItem="XAi-cZ-4QN" secondAttribute="trailing" constant="14" id="QBr-7Y-N7h"/>
                                                 <constraint firstAttribute="bottom" secondItem="Lxh-9Y-GyH" secondAttribute="bottom" constant="10" id="RKk-Ks-IRA"/>
                                                 <constraint firstItem="jTI-oc-5qq" firstAttribute="top" secondItem="0na-qT-txY" secondAttribute="topMargin" constant="-26" id="j9h-BR-CtR"/>
                                                 <constraint firstItem="XAi-cZ-4QN" firstAttribute="top" secondItem="0na-qT-txY" secondAttribute="top" constant="10" id="jGh-XK-HqX"/>

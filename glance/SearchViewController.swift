@@ -42,8 +42,10 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Configure the cell...
         cell.titleLabel.text = shows[indexPath.row].name
         cell.summaryLabel.text = shows[indexPath.row].summary
-        let imageUrl = URL(string: shows[indexPath.row].imageUrl)!
-        cell.previewImageView.kf.setImage(with: imageUrl)
+        
+        if let imageUrl = URL(string: shows[indexPath.row].imageUrl) {
+            cell.previewImageView.kf.setImage(with: imageUrl)
+        }
         
         return cell
     }
