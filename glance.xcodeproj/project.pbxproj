@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		49867A86201417870020EB88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867A85201417870020EB88 /* AppDelegate.swift */; };
-		49867A88201417870020EB88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867A87201417870020EB88 /* ViewController.swift */; };
+		49867A88201417870020EB88 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867A87201417870020EB88 /* SearchViewController.swift */; };
 		49867A8B201417870020EB88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49867A89201417870020EB88 /* Main.storyboard */; };
 		49867A8D201417870020EB88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49867A8C201417870020EB88 /* Assets.xcassets */; };
 		49867A90201417870020EB88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49867A8E201417870020EB88 /* LaunchScreen.storyboard */; };
+		49FBB4B72014217000FDE7E0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FBB4B62014217000FDE7E0 /* TableViewController.swift */; };
+		49FBB4B920142A3100FDE7E0 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FBB4B820142A3100FDE7E0 /* Network.swift */; };
+		49FBB4BB20142AA700FDE7E0 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FBB4BA20142AA700FDE7E0 /* Show.swift */; };
+		49FBB4BD2014318F00FDE7E0 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FBB4BC2014318F00FDE7E0 /* SearchTableViewCell.swift */; };
 		D1FDF78B00AA6DF924307B9F /* Pods_glance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790BA4570148BD77E09C012A /* Pods_glance.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +23,15 @@
 		1C297A75028A1D5E78A0D721 /* Pods-glance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-glance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-glance/Pods-glance.debug.xcconfig"; sourceTree = "<group>"; };
 		49867A82201417870020EB88 /* glance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = glance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49867A85201417870020EB88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49867A87201417870020EB88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49867A87201417870020EB88 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		49867A8A201417870020EB88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49867A8C201417870020EB88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49867A8F201417870020EB88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49867A91201417870020EB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49FBB4B62014217000FDE7E0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		49FBB4B820142A3100FDE7E0 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		49FBB4BA20142AA700FDE7E0 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		49FBB4BC2014318F00FDE7E0 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		790BA4570148BD77E09C012A /* Pods_glance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_glance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB192CB1E3F443C8E81EDBA8 /* Pods-glance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-glance.release.xcconfig"; path = "Pods/Target Support Files/Pods-glance/Pods-glance.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,8 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				49867A85201417870020EB88 /* AppDelegate.swift */,
-				49867A87201417870020EB88 /* ViewController.swift */,
+				49867A87201417870020EB88 /* SearchViewController.swift */,
+				49FBB4BC2014318F00FDE7E0 /* SearchTableViewCell.swift */,
+				49FBB4BA20142AA700FDE7E0 /* Show.swift */,
 				49867A89201417870020EB88 /* Main.storyboard */,
+				49FBB4B820142A3100FDE7E0 /* Network.swift */,
+				49FBB4B62014217000FDE7E0 /* TableViewController.swift */,
 				49867A8C201417870020EB88 /* Assets.xcassets */,
 				49867A8E201417870020EB88 /* LaunchScreen.storyboard */,
 				49867A91201417870020EB88 /* Info.plist */,
@@ -219,7 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49867A88201417870020EB88 /* ViewController.swift in Sources */,
+				49867A88201417870020EB88 /* SearchViewController.swift in Sources */,
+				49FBB4B72014217000FDE7E0 /* TableViewController.swift in Sources */,
+				49FBB4B920142A3100FDE7E0 /* Network.swift in Sources */,
+				49FBB4BD2014318F00FDE7E0 /* SearchTableViewCell.swift in Sources */,
+				49FBB4BB20142AA700FDE7E0 /* Show.swift in Sources */,
 				49867A86201417870020EB88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTYUD7N245;
 				INFOPLIST_FILE = glance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tsukudabuddha.glance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -377,6 +394,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTYUD7N245;
 				INFOPLIST_FILE = glance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tsukudabuddha.glance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
