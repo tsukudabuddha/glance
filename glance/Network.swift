@@ -14,14 +14,12 @@ class Network {
     func getShows(keyword: String, completion: @escaping ([Show]) -> Void) {
         let parameters: Parameters = ["q": keyword]
         let urlString = "http://api.tvmaze.com/search/shows"
-        print("url: \(urlString)")
         let Url = URL(string: urlString)!
     
         
         Alamofire.request(Url, method: .get, parameters: parameters).responseJSON { (response) in
             if let data = response.data {
                 let shows = try? JSONDecoder().decode([Show].self, from: data)
-                print(response.debugDescription)
                 
                 if let shows = shows {
                     completion(shows)
