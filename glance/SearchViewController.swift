@@ -50,6 +50,19 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let show = shows[indexPath.row]
+        
+        /* Reference storyboard */
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let detailVC = storyboard.instantiateViewController(withIdentifier: "showDetailVC") as! ShowDetailViewController
+        detailVC.show = show
+       
+        self.present(detailVC, animated: true) {
+            print("CLosed detail")
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

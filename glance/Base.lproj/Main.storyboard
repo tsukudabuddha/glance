@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -105,6 +106,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="80.799999999999997" y="31.934032983508249"/>
+        </scene>
+        <!--Show Detail View Controller-->
+        <scene sceneID="BDn-gR-gbg">
+            <objects>
+                <viewController storyboardIdentifier="showDetailVC" id="R1f-IV-1pg" customClass="ShowDetailViewController" customModule="glance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U8b-0V-Tf6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="m5L-Jx-cqX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEc-A5-zzV">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lbt-em-tcB">
+                                                <rect key="frame" x="10" y="25" width="182" height="273.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Lbt-em-tcB" secondAttribute="height" multiplier="333:500" id="12i-VC-LrT"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8pG-DV-Vf6">
+                                                <rect key="frame" x="202" y="17" width="163" height="289.5"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Lbt-em-tcB" secondAttribute="bottom" constant="25" id="QLs-2M-T4L"/>
+                                            <constraint firstItem="8pG-DV-Vf6" firstAttribute="leading" secondItem="Lbt-em-tcB" secondAttribute="trailing" constant="10" id="WU7-8l-tYk"/>
+                                            <constraint firstAttribute="trailing" secondItem="8pG-DV-Vf6" secondAttribute="trailing" constant="10" id="bqa-OJ-57B"/>
+                                            <constraint firstItem="Lbt-em-tcB" firstAttribute="leading" secondItem="GEc-A5-zzV" secondAttribute="leading" constant="10" id="hJ7-8E-sOO"/>
+                                            <constraint firstItem="8pG-DV-Vf6" firstAttribute="top" secondItem="Lbt-em-tcB" secondAttribute="top" constant="-8" id="nVh-2h-UHb"/>
+                                            <constraint firstItem="8pG-DV-Vf6" firstAttribute="centerY" secondItem="Lbt-em-tcB" secondAttribute="centerY" id="rXO-L5-57p"/>
+                                            <constraint firstItem="Lbt-em-tcB" firstAttribute="top" secondItem="GEc-A5-zzV" secondAttribute="top" constant="25" id="zut-et-Aeo"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baz-aF-jcm">
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="X8m-SX-18q" firstAttribute="trailing" secondItem="m5L-Jx-cqX" secondAttribute="trailing" id="2CJ-mB-PTM"/>
+                            <constraint firstItem="m5L-Jx-cqX" firstAttribute="leading" secondItem="X8m-SX-18q" secondAttribute="leading" id="2JN-ZM-eHb"/>
+                            <constraint firstItem="m5L-Jx-cqX" firstAttribute="top" secondItem="X8m-SX-18q" secondAttribute="top" id="CM0-X8-uOf"/>
+                            <constraint firstItem="X8m-SX-18q" firstAttribute="bottom" secondItem="m5L-Jx-cqX" secondAttribute="bottom" id="YMt-yb-OtQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X8m-SX-18q"/>
+                    </view>
+                    <connections>
+                        <outlet property="posterImageView" destination="Lbt-em-tcB" id="ERs-xS-Sba"/>
+                        <outlet property="summaryTextView" destination="8pG-DV-Vf6" id="QFi-Wa-sjc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfD-Kr-fa5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="31.934032983508249"/>
         </scene>
     </scenes>
 </document>
